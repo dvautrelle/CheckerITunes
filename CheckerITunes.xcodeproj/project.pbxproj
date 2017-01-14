@@ -13,6 +13,10 @@
 		F2689C2C1E19545C00B840F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2689C2A1E19545C00B840F3 /* Main.storyboard */; };
 		F2689C371E19545C00B840F3 /* CheckerITunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2689C361E19545C00B840F3 /* CheckerITunesTests.swift */; };
 		F2689C421E19545C00B840F3 /* CheckerITunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2689C411E19545C00B840F3 /* CheckerITunesUITests.swift */; };
+		F2689C501E19579200B840F3 /* test-pyitunes.py in Resources */ = {isa = PBXBuildFile; fileRef = F2689C4F1E19579200B840F3 /* test-pyitunes.py */; };
+		F2689C531E195A8A00B840F3 /* InfosItunesLibrary.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F2689C521E195A8A00B840F3 /* InfosItunesLibrary.rtf */; };
+		F2689C551E241AD700B840F3 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2689C541E241AD400B840F3 /* Album.swift */; };
+		F2689C561E241AD700B840F3 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2689C541E241AD400B840F3 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 		F2689C3D1E19545C00B840F3 /* CheckerITunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckerITunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2689C411E19545C00B840F3 /* CheckerITunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerITunesUITests.swift; sourceTree = "<group>"; };
 		F2689C431E19545C00B840F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2689C4F1E19579200B840F3 /* test-pyitunes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = "test-pyitunes.py"; path = "../../../python/test-pyitunes.py"; sourceTree = "<group>"; };
+		F2689C521E195A8A00B840F3 /* InfosItunesLibrary.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = InfosItunesLibrary.rtf; sourceTree = "<group>"; };
+		F2689C541E241AD400B840F3 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +102,10 @@
 		F2689C231E19545C00B840F3 /* CheckerITunes */ = {
 			isa = PBXGroup;
 			children = (
+				F2689C511E195A5700B840F3 /* Infos */,
 				F2689C241E19545C00B840F3 /* AppDelegate.swift */,
 				F2689C261E19545C00B840F3 /* ViewController.swift */,
+				F2689C541E241AD400B840F3 /* Album.swift */,
 				F2689C281E19545C00B840F3 /* Assets.xcassets */,
 				F2689C2A1E19545C00B840F3 /* Main.storyboard */,
 				F2689C2D1E19545C00B840F3 /* Info.plist */,
@@ -120,6 +129,15 @@
 				F2689C431E19545C00B840F3 /* Info.plist */,
 			);
 			path = CheckerITunesUITests;
+			sourceTree = "<group>";
+		};
+		F2689C511E195A5700B840F3 /* Infos */ = {
+			isa = PBXGroup;
+			children = (
+				F2689C4F1E19579200B840F3 /* test-pyitunes.py */,
+				F2689C521E195A8A00B840F3 /* InfosItunesLibrary.rtf */,
+			);
+			name = Infos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2689C531E195A8A00B840F3 /* InfosItunesLibrary.rtf in Resources */,
 				F2689C291E19545C00B840F3 /* Assets.xcassets in Resources */,
 				F2689C2C1E19545C00B840F3 /* Main.storyboard in Resources */,
+				F2689C501E19579200B840F3 /* test-pyitunes.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +280,7 @@
 			files = (
 				F2689C271E19545C00B840F3 /* ViewController.swift in Sources */,
 				F2689C251E19545C00B840F3 /* AppDelegate.swift in Sources */,
+				F2689C551E241AD700B840F3 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2689C371E19545C00B840F3 /* CheckerITunesTests.swift in Sources */,
+				F2689C561E241AD700B840F3 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FE3558343L;
 				INFOPLIST_FILE = CheckerITunes/Info.plist;
@@ -414,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FE3558343L;
 				INFOPLIST_FILE = CheckerITunes/Info.plist;
